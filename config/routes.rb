@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   root 'welcome#index'
   get  '/help',    to: 'static_pages#help'
   get  '/about',   to: 'static_pages#about'
