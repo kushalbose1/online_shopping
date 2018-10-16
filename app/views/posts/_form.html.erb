@@ -15,6 +15,10 @@
     <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
+  <div class="field">
+    <%= f.label :account %>
+    <%= f.select(:class_name,Post::DROPDOWN_LIST) %>
+  </div>
 
   <div class="field">
     <%= f.label :description %>
